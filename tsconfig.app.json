@@ -21,7 +21,7 @@
 			"@/hooks/*": ["./src/hooks/*"],
 			"@/utils/*": ["./src/utils/*"],
 			"@/lib/*": ["./src/lib/*"],
-			"@/router/*": ["./src/router/*"],
+			"@/routes/*": ["./src/routes/*"],
 			"@/pages/*": ["./src/router/pages/*"],
 			"@/helpers/*": ["./src/helpers/*"],
 			"@/stores/*": ["./src/stores/*"],
