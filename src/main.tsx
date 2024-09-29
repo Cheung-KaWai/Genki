@@ -4,10 +4,17 @@ import "./css/index.css";
 
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
-import { createRouter, RouterProvider } from "@tanstack/react-router";
+import { createRouter, NotFoundRoute, RouterProvider } from "@tanstack/react-router";
+import { Route as rootRoute } from "./routes/__root.tsx";
+
+// not found route
+const notFoundRoute = new NotFoundRoute({
+  getParentRoute: () => rootRoute,
+  component: () => "404 hehe not Found",
+});
 
 // Create a new router instance
-const router = createRouter({ routeTree });
+const router = createRouter({ routeTree, notFoundRoute });
 
 // Register the router instance for type safety
 declare module "@tanstack/react-router" {
