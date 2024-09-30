@@ -1,4 +1,6 @@
-export const getTableOfContent = async () => {
+import { queryOptions } from "@tanstack/react-query";
+
+const getTableOfContent = async () => {
   try {
     const res = await fetch("/data/table-of-content/content.json");
 
@@ -9,3 +11,9 @@ export const getTableOfContent = async () => {
     console.error("Error fetching table of content:", error);
   }
 };
+
+export const queryTableOfContent = queryOptions({
+  queryKey: ["tableOfContent"],
+  queryFn: getTableOfContent,
+  staleTime: Infinity,
+});
