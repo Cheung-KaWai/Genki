@@ -1,0 +1,35 @@
+{
+  "general": {
+    "title": "Writing systems",
+    "content": [
+      {
+        "title": "Hiragana",
+        "urlPath": "writing-systems/hiragana",
+        "source": "/writing-systems/hiragana.json"
+      },
+      {
+        "title": "Katakana",
+        "urlPath": "writing-systems/katakana",
+        "source": ""
+      },
+      {
+        "title": "Kanji",
+        "urlPath": "writing-systems/kanji",
+        "source": ""
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "title": "Chapter 1: New Friends",
+      "titleJp": "Chapter いち: あたらしい ともだち",
+      "content": [
+        {
+          "title": "X は Y です",
+          "urlPath": "it-is-sentences",
+          "source": "/chapter/1/it-is-sentences.md"
+        }
+      ]
+    }
+  ]
+}
